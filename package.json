@@ -1,0 +1,27 @@
+{
+  "name": "exactspace-react-assignments",
+  "version": "1.0.0",
+  "description": "Exactspace Technologies Frontend Internship Assignment - Task 1 (Real-time Chat App) & Task 2 (Infinite Photo Gallery)",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"magenta,cyan\" \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "react",
+    "socket.io",
+    "chat-app",
+    "infinite-scroll",
+    "picsum-api",
+    "exactspace"
+  ],
+  "author": "Ayush",
+  "license": "MIT"
+}
